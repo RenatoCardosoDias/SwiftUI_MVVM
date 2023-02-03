@@ -15,9 +15,18 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(message)
         }
         .padding()
+    }
+    
+    private var loadingOverlay: some View {
+        
+        Group {
+            if isLoading {
+                Text("Carregando... ")
+            }
+        }
     }
 }
 
