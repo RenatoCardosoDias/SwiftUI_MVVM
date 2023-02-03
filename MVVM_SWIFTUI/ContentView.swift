@@ -8,30 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    private var isLoading = false
-    private var message = ""
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text(message)
-        }
-        .padding()
-    }
+    @ObservedObject private var model: ContentViewModel
     
-    private var loadingOverlay: some View {
-        
-        Group {
-            if isLoading {
-                Text("Carregando... ")
-            }
-        }
-    }
-}
+    init(model: ContentViewModel) {
+        self.model = model
+    } //end init
+    
+    
+    var body: some View {
+        Text(model.state.isLoading ? "Carregando..." : model.state.message)
+            .onAppear(perform: self.model.loadData)
+    } //end var body
+} //end struct
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group{
+            ContentView(model: .init(initialState: .init(isLoading: true)))
+                .previewDisplayName("Loading")
+            ContentView(model: .init(initialState: .init(message: "Sofia Dias")))
+                .previewDisplayName("Loaded")
+        }
     }
 }
