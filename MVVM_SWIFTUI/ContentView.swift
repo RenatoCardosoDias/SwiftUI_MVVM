@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var isLoading = false
+    private var message = ""
     var body: some View {
         VStack {
             Image(systemName: "globe")
