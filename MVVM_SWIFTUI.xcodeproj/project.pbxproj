@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8838492F298E01CC0084F7F2 /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8838492E298E01CC0084F7F2 /* BindingExtensions.swift */; };
+		889F4F50298E0B890084FADB /* MVVM_SWIFTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889F4F4F298E0B890084FADB /* MVVM_SWIFTUITests.swift */; };
 		88D7D42B298DB886002D8912 /* Minimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D42A298DB886002D8912 /* Minimal.swift */; };
 		88D7D42E298DB940002D8912 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D42D298DB940002D8912 /* LoginView.swift */; };
 		88F75317298DA8D400C5B75B /* MVVM_SWIFTUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F75316298DA8D400C5B75B /* MVVM_SWIFTUIApp.swift */; };
@@ -15,7 +17,20 @@
 		88F7531E298DA8D500C5B75B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F7531D298DA8D500C5B75B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		889F4F51298E0B890084FADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F7530B298DA8D400C5B75B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F75312298DA8D400C5B75B;
+			remoteInfo = MVVM_SWIFTUI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8838492E298E01CC0084F7F2 /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+		889F4F4D298E0B890084FADB /* MVVM_SWIFTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_SWIFTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		889F4F4F298E0B890084FADB /* MVVM_SWIFTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_SWIFTUITests.swift; sourceTree = "<group>"; };
 		88D7D42A298DB886002D8912 /* Minimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minimal.swift; sourceTree = "<group>"; };
 		88D7D42C298DB8F2002D8912 /* MVVM-SWIFTUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MVVM-SWIFTUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		88D7D42D298DB940002D8912 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -27,6 +42,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		889F4F4A298E0B890084FADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88F75310298DA8D400C5B75B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,6 +59,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8838492D298E01B10084F7F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8838492E298E01CC0084F7F2 /* BindingExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		889F4F4E298E0B890084FADB /* MVVM_SWIFTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				889F4F4F298E0B890084FADB /* MVVM_SWIFTUITests.swift */,
+			);
+			path = MVVM_SWIFTUITests;
+			sourceTree = "<group>";
+		};
 		88D7D429298DB877002D8912 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				88F75315298DA8D400C5B75B /* MVVM_SWIFTUI */,
+				889F4F4E298E0B890084FADB /* MVVM_SWIFTUITests */,
 				88F75314298DA8D400C5B75B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				88F75313298DA8D400C5B75B /* MVVM_SWIFTUI.app */,
+				889F4F4D298E0B890084FADB /* MVVM_SWIFTUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +105,7 @@
 		88F75315298DA8D400C5B75B /* MVVM_SWIFTUI */ = {
 			isa = PBXGroup;
 			children = (
+				8838492D298E01B10084F7F2 /* Extensions */,
 				88D7D42C298DB8F2002D8912 /* MVVM-SWIFTUI-Info.plist */,
 				88D7D429298DB877002D8912 /* Recipes */,
 				88F75316298DA8D400C5B75B /* MVVM_SWIFTUIApp.swift */,
@@ -86,6 +127,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		889F4F4C298E0B890084FADB /* MVVM_SWIFTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889F4F53298E0B890084FADB /* Build configuration list for PBXNativeTarget "MVVM_SWIFTUITests" */;
+			buildPhases = (
+				889F4F49298E0B890084FADB /* Sources */,
+				889F4F4A298E0B890084FADB /* Frameworks */,
+				889F4F4B298E0B890084FADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				889F4F52298E0B890084FADB /* PBXTargetDependency */,
+			);
+			name = MVVM_SWIFTUITests;
+			productName = MVVM_SWIFTUITests;
+			productReference = 889F4F4D298E0B890084FADB /* MVVM_SWIFTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		88F75312298DA8D400C5B75B /* MVVM_SWIFTUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88F75321298DA8D600C5B75B /* Build configuration list for PBXNativeTarget "MVVM_SWIFTUI" */;
@@ -113,6 +172,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					889F4F4C298E0B890084FADB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 88F75312298DA8D400C5B75B;
+					};
 					88F75312298DA8D400C5B75B = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -132,11 +195,19 @@
 			projectRoot = "";
 			targets = (
 				88F75312298DA8D400C5B75B /* MVVM_SWIFTUI */,
+				889F4F4C298E0B890084FADB /* MVVM_SWIFTUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		889F4F4B298E0B890084FADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88F75311298DA8D400C5B75B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +220,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		889F4F49298E0B890084FADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889F4F50298E0B890084FADB /* MVVM_SWIFTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88F7530F298DA8D400C5B75B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,12 +236,55 @@
 				88F75317298DA8D400C5B75B /* MVVM_SWIFTUIApp.swift in Sources */,
 				88D7D42E298DB940002D8912 /* LoginView.swift in Sources */,
 				88D7D42B298DB886002D8912 /* Minimal.swift in Sources */,
+				8838492F298E01CC0084F7F2 /* BindingExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		889F4F52298E0B890084FADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88F75312298DA8D400C5B75B /* MVVM_SWIFTUI */;
+			targetProxy = 889F4F51298E0B890084FADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		889F4F54298E0B890084FADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "staki.com.br.MVVM-SWIFTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM_SWIFTUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM_SWIFTUI";
+			};
+			name = Debug;
+		};
+		889F4F55298E0B890084FADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "staki.com.br.MVVM-SWIFTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM_SWIFTUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM_SWIFTUI";
+			};
+			name = Release;
+		};
 		88F7531F298DA8D600C5B75B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -259,6 +381,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -280,6 +403,7 @@
 		88F75322298DA8D600C5B75B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,8 +423,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "staki.com.br.MVVM-SWIFTUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -342,6 +466,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		889F4F53298E0B890084FADB /* Build configuration list for PBXNativeTarget "MVVM_SWIFTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889F4F54298E0B890084FADB /* Debug */,
+				889F4F55298E0B890084FADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		88F7530E298DA8D400C5B75B /* Build configuration list for PBXProject "MVVM_SWIFTUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

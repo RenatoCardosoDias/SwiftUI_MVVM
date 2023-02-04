@@ -11,7 +11,11 @@ import SwiftUI
 struct MVVM_SWIFTUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(model: .init())
+////            ContentView(model: .init())
+//            LoginView()
+            NavigationView{
+                LoginView(model: .init(initialState: .init()))
+            }
         }
     }
 }
